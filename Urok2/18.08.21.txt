@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	//const тип_данных имя = значение;
+	const float PI = 3.14;
+	cout << "PI = " << PI << "\n";
+}
+
+========================================================
+#include <iostream>
+using namespace std;
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	//Скидка
+	float Discount;
+	//Цена
+	float Cost;
+	//Количество
+	int Count;
+
+	cout << "Введите скидку: ";
+	cin >> Discount;
+	cout << "Введите цену: ";
+	cin >> Cost;
+	cout << "Введите количество: ";
+	cin >> Count;
+	
+	cout << "Скидка составляет: " << (Count * Cost * Discount / 100) << endl;
+	cout << "Сумма: " << (Count * Cost) - (Count * Cost * Discount / 100);
+}
