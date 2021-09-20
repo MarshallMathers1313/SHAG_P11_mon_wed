@@ -1,0 +1,128 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	//Унарный оператор (-, +)
+	int a = 5;
+	cout << "a = " << a << endl;
+
+	a = -a;
+	cout << "a = " << a << endl;
+
+	a = -a;//5
+	cout << "a = " << a << endl;
+}
+
+=======================================================
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	//Бинарный оператор (+, -, *, /, %)
+	int a = 10;
+	int b = 2;
+	cout << "a + b = " << a + b << endl;
+	cout << "a - b = " << a - b << endl;
+	cout << "a * b = " << a * b << endl;
+	cout << "a / b = " << a / b << endl;
+	cout << "a % b = " << a % b << endl;
+
+}
+
+========================================================
+#include <iostream>
+using namespace std;
+int main()
+{
+	//Инкремент и дискремент
+	int c = 5;
+	cout << "c = " << c << endl;
+	c = c + 1;//6
+	cout <<"c = "<<c << endl;
+	c++;// c = c + 1 // 7
+	cout <<"c = "<<c << endl;
+
+	c = c - 1;
+	cout << "c = " << c << endl;
+	c--; //c = c - 1
+	cout << "c = " << c << endl;
+}
+
+=======================================================
+#include <iostream>
+using namespace std;
+int main()
+{
+	//Инкремент и дискремент
+	int c = 5;
+	cout << "c = " << ++c << endl;
+	cout << "c = " << c++ << endl;
+	cout << "c = " << c << endl;
+}
+
+=======================================================
+#include <iostream>
+using namespace std;
+int main()
+{
+	//Преобравзование типов
+	float x = 5.5;
+	//Неявное преобразование
+	int y = x;
+
+	//Явное преобравование
+	cout << "x = " << (int)x << endl;
+
+	cout << "y = " << y << endl;
+}
+
+
+========================================================
+#include <iostream>
+using namespace std;
+int main()
+{
+	int age;
+	cout << "Input your age: ";
+	cin >> age;
+
+	if (age >= 18)
+	{
+		cout << "Welcome!" << endl;
+	}
+	else
+	{
+		cout << "You don't enter!" << endl;
+	}
+}
+
+======================================================
+#include <iostream>
+using namespace std;
+int main()
+{
+	int a;
+	int b;
+	int c;
+	cout << "Input a: ";
+	cin >> a;
+	cout << "Input b: ";
+	cin >> b;
+	cout << "Input c: ";
+	cin >> c;
+	
+	if (a > b && a > c)
+	{
+		cout << a << endl;
+	}
+	else if (b > a && b > c)
+	{
+		cout << b << endl;
+	}
+	else if (c > a && c > b)
+	{
+		cout << c << endl;
+	}
+
+}
