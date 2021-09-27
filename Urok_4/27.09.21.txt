@@ -1,0 +1,58 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	cout << "Welcome Calculator!" << endl;
+	cout << "Input: ";
+
+	float a;
+	cin >> a;
+	
+	char sym;
+	cin >> sym;
+
+	float b;
+	cin >> b;
+
+	switch (sym)
+	{
+	case '+':
+		cout << a << " + " << b << " = " << a + b << endl;
+		break;
+	case '-':
+		cout << a << " - " << b << " = " << a - b << endl;
+		break;
+	case '*':
+		cout << a << " * " << b << " = " << a * b << endl;
+		break;
+	case '/':
+		cout << a << " / " << b << " = " << a / b << endl;
+		break;
+	default:
+		cout << "Incorrect operation!" << endl;
+		break;
+	}
+	
+}
+
+====================================================
+#include <iostream>
+using namespace std;
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+
+	//Начало
+	int i = 1;
+
+	//Конец
+	int n;
+	cout << "Введите число: ";
+	cin >> n;
+
+	while (n >= i)
+	{
+		cout << i << " ";
+		i++;
+	}
+}
