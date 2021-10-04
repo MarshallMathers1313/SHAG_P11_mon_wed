@@ -1,0 +1,77 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+
+	cout << "1 - пицца 1(30$)" << endl;
+	cout << "2 - пицца 2(40$)" << endl;
+	cout << "3 - пицца 3(50$)" << endl;
+	cout << "4 - пицца 4(60$)" << endl;
+	cout << "5 - coca-cola(5$)" << endl;
+	cout << "6 - water(2$)" << endl;
+	cout << "7 - fanta(4$)" << endl;
+
+	int key;
+	cout << "Введите ваш выбор:";
+	cin >> key;
+	
+	int count;
+	cout << "Введите количество: ";
+	cin >> count;
+
+	float sum = 0;
+	switch (key)
+	{
+	case 1:
+		sum = 30 * count;
+		break;
+	case 2:
+		sum = 40 * count;
+		break;
+	case 3:
+		sum = 50 * count;
+		break;
+	case 4:
+		sum = 60 * count;
+		break;
+	case 5:
+		sum = 5 * count;
+		break;
+	case 6:
+		sum = 2 * count;
+		break;
+	case 7:
+		sum = 4 * count;
+		break;
+	default:
+		break;
+	}
+
+	if (sum > 50)
+	{
+		sum = sum - sum * 0.2;
+	}
+	cout << "Sum: " << sum << endl;
+}
+
+
+===========================================================
+#include <iostream>
+using namespace std;
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+
+	int n;
+	cout << "Input n: ";
+	cin >> n;
+
+	int i = 1;
+
+	while (i <= n)
+	{
+		cout << i << " ";
+		i++;
+	}
+}
